@@ -1,11 +1,5 @@
 export default class Requestapi {
+  getsPokemons = async () => Promise.resolve({ pokemon: 'pikachu' })
 
-  getscores = async () => {
-
-    return Promise.resolve({pokemon: 'pikachu'});
-  }
-  contadorElementos  = async () =>{
-    
-    return Promise.resolve({contador: 1154});; 
-  }
+  contadorElementos = async () => Promise.resolve({ contador: 1154 })
 }
