@@ -31,3 +31,31 @@ footer {
   padding: 2%;
   border: 3px solid black;
 }
+
+.add-a-comment {
+    display: flex;
+    flex-direction: column;    
+}
+
+input {
+    width: 10%;
+    margin: 1%;
+    border: 3px solid black;
+}
+
+textarea {
+    width: 15%;
+    margin: 1%;
+    margin-top: 0%;
+    border: 3px solid black;
+}
+
+.comment-btn {
+    width: 12%;
+    margin: 1%;
+    margin-top: 0%;
+    background-color: white;
+    border: 3px solid black;
+    box-shadow: 2.5px 5px;
+}
+
