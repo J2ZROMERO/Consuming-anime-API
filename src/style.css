@@ -1,3 +1,34 @@
-body{
-    background-color: red;
+* {
+    font-family: 'Pokemon Solid', sans-serif;
+    margin: 0%;
+}
+
+header {
+    border: 3px solid black;
+}
+
+.logo-image {
+    width: 40px;
+    margin: 2%;
+    margin-top: 40%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    align-items: center;
+}
+
+.nav-ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10%;
+
+}
+
+footer {
+    background-color: rgb(180, 180, 180);    
+    padding: 2%;
+    border: 3px solid black;
 }

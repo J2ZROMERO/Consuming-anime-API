@@ -1,5 +1,9 @@
 import _ from 'lodash';
 import './style.css'
+import pokeicon from './img/pokeicon.png'
+
+document.querySelector('.logo-image').src = pokeicon;
+
 function component() {
     const element = document.createElement('div');
   
