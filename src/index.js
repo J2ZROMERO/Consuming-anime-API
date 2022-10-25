@@ -1,16 +1,15 @@
+
 import _ from 'lodash';
 import './style.css';
 import pokeicon from './img/pokeicon.png';
 
-document.querySelector('.logo-image').src = pokeicon;
+import RequestApi from './modules/requestApi';
 
-function component() {
-  const element = document.createElement('div');
+const api = new RequestApi();
 
-  // Lodash, currently included via a script, is required for this line to work
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
-  return element;
-}
 
-document.body.appendChild(component());
+ document.querySelector('.logo-image').src = pokeicon;
+
+ window.addEventListener('load', () => {
+  api.addlielement();
+});
