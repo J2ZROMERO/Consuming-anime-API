@@ -59,3 +59,9 @@ textarea {
     box-shadow: 2.5px 5px;
 }
 
+.details {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 3%;
+}
