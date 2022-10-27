@@ -1,7 +1,7 @@
 import heart from '../img/heart.png';
 
 export default class lielement {
-  static generateElement(name, img,likes) {
+  static generateElement(name, img) {
     return `<li class="contentpoke">
     <div class="target">
         <img src="${img}" alt="" class="poke">
