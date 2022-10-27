@@ -1,6 +1,4 @@
 /* eslint-disable */
-
-
 import './style.css';
 import pokeicon from './img/pokeicon.png';
 import sear from './img/sear.png';

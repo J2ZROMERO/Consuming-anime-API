@@ -17,7 +17,6 @@ export default class Requestapi {
         data.sprites.front_default;
         elementsli += lielement.generateElement(e.name, data.sprites.front_default);
       }
-
       count += 1;
     }
     document.querySelector('.listPokemons').innerHTML = elementsli;
@@ -42,7 +41,6 @@ export default class Requestapi {
   getsPokemons = async () => {
     const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0');
     const data = await response.json();
-
     return data;
   }
 
