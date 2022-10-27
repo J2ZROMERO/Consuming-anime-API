@@ -1,4 +1,5 @@
 import heart from '../img/heart.png';
+
 export default class lielement {
   static generateElement(name, img) {
     return `<li class="contentpoke">
