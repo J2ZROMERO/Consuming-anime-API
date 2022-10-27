@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/J2ZROMERO/Consuming-anime-API#readme",
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.19.6",
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.1",
     "eslint": "^7.32.0",
@@ -30,6 +31,7 @@
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^5.5.0",
     "jest": "^29.2.2",
+    "jest-environment-jsdom": "^29.2.2",
     "style-loader": "^3.3.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",

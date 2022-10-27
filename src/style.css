@@ -1,10 +1,8 @@
 * {
   font-family: 'Pokemon Solid', sans-serif;
   margin: 0%;
-}
-
-header {
-  border: 3px solid black;
+  list-style: none;
+  padding: 0;
 }
 
 .logo-image {
@@ -16,8 +14,10 @@ header {
 nav {
   display: flex;
   justify-content: space-around;
-  width: 95%;
+  width: 100%;
   align-items: center;
+  background-color: #b4b4b4;
+  border: 3px solid black;
 }
 
 .nav-ul {
@@ -29,5 +29,94 @@ nav {
 footer {
   background-color: rgb(180, 180, 180);
   padding: 2%;
+  border-top: 3px solid black;
+}
+
+.listPokemons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 17px;
+  grid-row-gap: 25px;
+  margin-bottom: 5%;
+  margin-top: 3%;
+}
+
+.target {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 94%;
+}
+
+.likes {
+  width: 51%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+h3 {
+  width: 100%;
+  text-align: end;
+  font-size: 0.7em;
+}
+
+.poke {
+  width: 50%;
+  height: 50%;
+}
+
+.reservations {
+  margin-top: 4%;
+  width: 56%;
+  box-shadow: 2.5px 5px;
   border: 3px solid black;
+  background-color: #b4b4b4;
+}
+
+.comments {
+  width: 51%;
+  box-shadow: 2.5px 5px;
+  border: 3px solid black;
+  background-color: #b4b4b4;
+  margin-top: 2%;
+}
+
+.pokename {
+  font-size: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.heart {
+  width: 20px;
+  height: 20px;
+}
+
+.totalpokemons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selectPokemon {
+  height: 29px;
+  margin-left: 1%;
+  border: 3px solid black;
+  text-align: center;
+}
+
+.confirm {
+  width: 29px;
+  margin-left: 1%;
+  cursor: pointer;
+}
+
+.seemore {
+  margin-left: 12%;
 }
