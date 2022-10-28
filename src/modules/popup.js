@@ -1,7 +1,7 @@
-import Requestapicapstone from './capstoneAPI.js'
+import Requestapicapstone from './capstoneAPI.js';
 
 const popup = () => {
-    const popupHtml = `<div class="popup">
+  const popupHtml = `<div class="popup">
     
     <div class="item-details">
     <div class="image-div">
@@ -35,20 +35,19 @@ const popup = () => {
     </div>
     </div>
     </div>`;
-    return popupHtml;
+  return popupHtml;
 };
 
-let addNewComment = new Requestapicapstone()
+const addNewComment = new Requestapicapstone();
 
 const addcomment = (id) => {
-    document.querySelector('.comment-btn').addEventListener('click', () => {
-      const nameInput = document.querySelector('.nameInput').value; 
-      const textInput = document.querySelector('.textInput').value;
-           addNewComment.postcoments(id, nameInput, textInput)  
-           setTimeout(function(){ window.location.reload()}, 200 ) 
-                     setTimeout();
-    })
-    
-}
+  document.querySelector('.comment-btn').addEventListener('click', () => {
+    const nameInput = document.querySelector('.nameInput').value;
+    const textInput = document.querySelector('.textInput').value;
+    addNewComment.postcoments(id, nameInput, textInput);
+    setTimeout(() => { window.location.reload(); }, 200);
+    setTimeout();
+  });
+};
 
-export {popup, addcomment};
+export { popup, addcomment };

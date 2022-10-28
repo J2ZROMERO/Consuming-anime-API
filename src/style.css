@@ -192,18 +192,18 @@ textarea {
   text-align: center;
 }
 
-.creationDate, .userName, .userComment {
+.creationDate,
+.userName,
+.userComment {
   font-size: 10px;
 }
 
 .comments-ul {
   display: flex;
   flex-direction: column;
-  
   align-items: center;
 }
 
 .comment-li-cont {
   display: flex;
 }
-

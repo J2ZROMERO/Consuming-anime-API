@@ -16,11 +16,11 @@ export default class lielement {
     </li>`;
   }
 
-  static getComments(creationDate , userName, userComment) {
+  static getComments(creationDate, userName, userComment) {
     return `<li class='comment-li-cont'>
     <h2 class="creationDate">${creationDate}__ </h2>
     <h2 class="userName">${userName}: </h2>
     <h2 class="userComment">${userComment} </h2>
-    </li>`
+    </li>`;
   }
 }
