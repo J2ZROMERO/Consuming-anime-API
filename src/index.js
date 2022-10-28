@@ -31,7 +31,6 @@ document.querySelector('.confirm').addEventListener('click', () => {
 });
 
 document.addEventListener('click', (e) => {
-  console.log(e.target.parentElement.parentElement.id)  
   const commentsId = parseInt(e.target.parentElement.parentElement.id, 10);
   api.comments(commentsId);
   if (e.target.parentElement.parentElement.parentElement.parentElement != null) {

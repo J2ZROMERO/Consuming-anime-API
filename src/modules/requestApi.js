@@ -2,7 +2,8 @@
 
 import lielement from './eleLiPok.js';
 import CapstoneAPI from './capstoneAPI.js';
-import popup from './popup.js';
+import { popup, addcomment} from './popup.js';
+
 
 const likes = new CapstoneAPI();
 export default class Requestapi {
@@ -25,7 +26,6 @@ export default class Requestapi {
     const parentl = document.querySelector('.listPokemons').children;
     const valid = await this.getsPokemonsid(total);
     const like = await likes.getlikes();
- console.log(parentl[0].children[0].children[2]);
  const mobileVE = [];
  const mobileVersion = document.body;
     for (let i = 0; i < parentl.length; i += 1) {
@@ -92,6 +92,15 @@ export default class Requestapi {
   }
 
 comments = async (e) => {
+  const getComment = async () => {
+    const commentInfo = await likes.getcomments(e);
+    let liArray = "";
+    for(let i = 0; i < commentInfo.length; i+=1){
+      liArray += lielement.getComments(commentInfo[i].creation_date, commentInfo[i].username, commentInfo[i].comment)
+    }
+    document.querySelector('.comments-ul').innerHTML = liArray;
+  }
+  getComment();
   const response = await fetch('https://pokeapi.co/api/v2/pokemon/'+e+'/');
   const data = await response.json();
   for(const [key, value] of Object.entries(data)){
@@ -111,20 +120,17 @@ comments = async (e) => {
     if(key === 'name'){
       document.querySelector('.poke-name').innerHTML = value;      
     }
-    if(key === 'sprites'){
-      console.log(value.front_default, 'sos')  
-         
+    if(key === 'sprites'){         
        document.querySelector('.poke-image').src = value.front_default; 
       
-    }
-   
-
+    } 
     
-
-    console.log(key, value)
   }
+  addcomment(e);
   return data;
+  
 }
 base_experience
 }
+
 
