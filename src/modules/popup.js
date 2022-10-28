@@ -1,4 +1,4 @@
- const popup = () => {
+const popup = () => {
   const popupHtml = `<div class="popup">
     
     <div class="item-details">
@@ -18,8 +18,8 @@
     </ul>
     </div>
     </div>
-    </div>`
-    return popupHtml;
-}
+    </div>`;
+  return popupHtml;
+};
 
 export default popup;
