@@ -120,3 +120,43 @@ h3 {
 .seemore {
   margin-left: 12%;
 }
+
+.poke-image {
+  width: 80%;
+  margin: 5%;
+  margin-right: 0%;
+}
+
+.popup {
+  border: 3px solid black;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.ul-cont {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 5%;
+}
+
+.close-btn {
+  font-size: 30px;
+}
+
+.image-div {
+  display: flex;
+  justify-content: center;
+}
+
+.poke-name {
+  text-align: center;
+}
