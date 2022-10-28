@@ -3,4 +3,3 @@ export default class Requestapi {
 
   contadorElementos = async () => Promise.resolve({ contador: 1154 })
 }
-
