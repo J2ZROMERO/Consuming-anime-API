@@ -135,6 +135,7 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   margin-top: 3%;
+  margin-bottom: 3%;
 }
 
 .item-details {
@@ -160,3 +161,29 @@ h3 {
 .poke-name {
   text-align: center;
 }
+
+.add-a-comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-a-comment h2{
+  text-align: center;
+}
+
+input, textarea {
+  width: 90%;
+  margin-bottom: 5%;
+  border: 3px solid black;
+  padding-left: 2%;
+}
+
+.comment-btn {
+  width: 50%;
+  margin-bottom: 5%;
+  border: 3px solid black;
+  background-color: #b4b4b4;
+}
+
