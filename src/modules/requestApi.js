@@ -90,4 +90,41 @@ export default class Requestapi {
     const total = data.results.length;
     return total;
   }
+
+comments = async (e) => {
+  const response = await fetch('https://pokeapi.co/api/v2/pokemon/'+e+'/');
+  const data = await response.json();
+  for(const [key, value] of Object.entries(data)){
+    if(key === 'height'){
+      document.querySelector('.height').innerHTML = 'Height: ' + value;      
+    }
+    if(key === 'weight'){
+      document.querySelector('.weight').innerHTML = 'Weight: ' + value;      
+    }
+    if(key === 'base_experience'){
+      document.querySelector('.base_experience').innerHTML = 'Base experience: ' + value;      
+    }
+    if(key === 'order'){
+      document.querySelector('.order').innerHTML = 'Order: ' + value;      
+    }
+
+    if(key === 'name'){
+      document.querySelector('.poke-name').innerHTML = value;      
+    }
+    if(key === 'sprites'){
+      console.log(value.front_default, 'sos')  
+         
+       document.querySelector('.poke-image').src = value.front_default; 
+      
+    }
+   
+
+    
+
+    console.log(key, value)
+  }
+  return data;
 }
+base_experience
+}
+

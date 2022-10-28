@@ -10,6 +10,10 @@ import Requestapicapstone from './modules/capstoneAPI.js';
 const apiCtone = new Requestapicapstone();
 const api = new RequestApi();
 
+// const qweasd = async () => {
+//   console.log(await api.comments(3));
+// }
+// qweasd();
 document.querySelector('.logo-image').src = pokeicon;
 document.querySelector('.confirm').src = sear;
 
@@ -27,9 +31,13 @@ document.querySelector('.confirm').addEventListener('click', () => {
 });
 
 document.addEventListener('click', (e) => {
+  console.log(e.target.parentElement.parentElement.id)  
+  const commentsId = parseInt(e.target.parentElement.parentElement.id, 10);
+  api.comments(commentsId);
   if (e.target.parentElement.parentElement.parentElement.parentElement != null) {
     const idelement = parseInt(e.target.parentElement.parentElement.parentElement.parentElement.id, 10);
     apiCtone.setLikes(idelement);
+ 
   }
 });
 /* eslint-disable */
