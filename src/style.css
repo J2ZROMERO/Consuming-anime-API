@@ -169,11 +169,12 @@ h3 {
   align-items: center;
 }
 
-.add-a-comment h2{
+.add-a-comment h2 {
   text-align: center;
 }
 
-input, textarea {
+input,
+textarea {
   width: 90%;
   margin-bottom: 5%;
   border: 3px solid black;
@@ -186,4 +187,3 @@ input, textarea {
   border: 3px solid black;
   background-color: #b4b4b4;
 }
-
