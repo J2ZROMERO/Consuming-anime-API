@@ -101,10 +101,11 @@ h3 {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
 }
 
 .selectPokemon {
+  width: 15%;
   height: 29px;
   margin-left: 1%;
   border: 3px solid black;
