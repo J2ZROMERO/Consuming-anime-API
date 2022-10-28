@@ -120,3 +120,43 @@ h3 {
 .seemore {
   margin-left: 12%;
 }
+
+.poke-image {
+  width: 70%;
+  margin: 5%;
+  margin-right: 0%;
+}
+
+.popup {
+  border: 3px solid black;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ul-cont {
+  display: flex;
+  gap: 20%;
+}
+
+.close-btn {
+  
+
+  font-size: 30px;
+}
+
+.image-div {
+  display: flex;
+  justify-content: center;
+
+  
+
+}

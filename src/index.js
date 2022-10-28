@@ -5,6 +5,8 @@ import sear from './img/sear.png';
 import RequestApi from './modules/requestApi.js';
 import Requestapicapstone from './modules/capstoneAPI.js';
 
+
+
 const apiCtone = new Requestapicapstone();
 const api = new RequestApi();
 
@@ -31,3 +33,5 @@ document.addEventListener('click', (e) => {
   }
 });
 /* eslint-disable */
+
+document.querySelector('.poke-image').src = pokeicon;
