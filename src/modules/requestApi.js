@@ -99,6 +99,7 @@ comments = async (e) => {
       liArray += lielement.getComments(commentInfo[i].creation_date, commentInfo[i].username, commentInfo[i].comment)
     }
     document.querySelector('.comments-ul').innerHTML = liArray;
+    document.querySelector('.comments-counter').innerHTML = document.querySelector('.comments-ul').childElementCount;
   }
   getComment();
   const response = await fetch('https://pokeapi.co/api/v2/pokemon/'+e+'/');
