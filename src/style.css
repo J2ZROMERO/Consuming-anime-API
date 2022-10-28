@@ -187,3 +187,23 @@ textarea {
   border: 3px solid black;
   background-color: #b4b4b4;
 }
+
+.comments-section {
+  text-align: center;
+}
+
+.creationDate,
+.userName,
+.userComment {
+  font-size: 10px;
+}
+
+.comments-ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comment-li-cont {
+  display: flex;
+}

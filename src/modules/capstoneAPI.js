@@ -4,6 +4,8 @@ export default class Requestapicapstone {
     this.idApp = 'lQZw1DCmIXevvDoqUdE0';
     this.url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/';
     this.ulrlikes = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${this.idApp}/likes/`;
+    this.ulrpcomments = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${this.idApp}/comments/`;
+
   }
 
   
@@ -41,4 +43,42 @@ export default class Requestapicapstone {
     }
     return data;
   }
+
+  postcoments = async (idPokemon,name,comment) => {
+    await fetch(this.ulrpcomments, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ 
+      item_id: idPokemon,
+      username: name,
+      comment: comment}),
+    });
+
+
+  }
+
+  getcomments = async (id) => {
+    const response = await fetch(this.ulrpcomments+'?item_id='+id);
+    let data;
+   
+    if(response.status == 500){
+    } else {
+      document.querySelector('.no-comments').style.display = 'none';
+      try {
+        data = await response.json();
+        if(response.status === 400){
+          document.querySelector('.no-comments').style.display = 'block';
+        }
+        
+      } catch (error) {
+        data = 'null';
+           
+      }
+    }
+  
+    return data;
+ 
+  }
+
+
 }
