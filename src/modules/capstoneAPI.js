@@ -6,6 +6,7 @@ export default class Requestapicapstone {
     this.ulrlikes = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${this.idApp}/likes/`;
   }
 
+  
   getid = async () => {
     const val = await fetch(this.url, {
       method: 'POST',
