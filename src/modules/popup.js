@@ -18,6 +18,14 @@ const popup = () => {
     </ul>
     </div>
     </div>
+    <div class="comment-cont">
+          <form class="add-a-comment">
+            <h2>Add a comment</h1>
+              <input placeholder="Your name" type="text">  
+                <textarea name="" id="" cols="30" rows="3" placeholder="Your insights"></textarea>              
+                  <button class="comment-btn">Comment</button>
+          </form>
+        </div>
     </div>`;
   return popupHtml;
 };
