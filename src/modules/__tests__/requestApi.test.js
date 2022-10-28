@@ -19,3 +19,12 @@ describe('Get data from api', () => {
     });
   });
 });
+
+describe('Get data from api', () => {
+  const data = new Requestapi();
+  test('The result must be Pikachu', () => {
+    data.getsPokemons().then((e) => {
+      expect(e.pokemon).toBe('pikachu');
+    });
+  });
+});
