@@ -1,4 +1,7 @@
 import Requestapicapstone from './capstoneAPI.js';
+import lielement from './eleLiPok.js';
+const com = new Requestapicapstone();
+
 
 const popup = () => {
   const popupHtml = `<div class="popup">
@@ -38,16 +41,26 @@ const popup = () => {
   return popupHtml;
 };
 
-const addNewComment = new Requestapicapstone();
 
-const addcomment = (id) => {
-  document.querySelector('.comment-btn').addEventListener('click', () => {
+
+
+const addcomment = async (id) => {
+  document.querySelector('.comment-btn').addEventListener('click', async () => {
+    
     const nameInput = document.querySelector('.nameInput').value;
     const textInput = document.querySelector('.textInput').value;
-    addNewComment.postcoments(id, nameInput, textInput);
-    setTimeout(() => { window.location.reload(); }, 200);
-    setTimeout();
+
+    await com.postcoments(id, nameInput, textInput);
+      const commentInfo = await com.setcommentsevent(id);
+      console.log(commentInfo)
+       let liArray = "";
+       for(let i = 0; i < commentInfo.length; i+=1){
+         liArray += lielement.getComments(commentInfo[i].creation_date, commentInfo[i].username, commentInfo[i].comment)
+       }
+       document.querySelector('.comments-ul').innerHTML = liArray;
+       document.querySelector('.comments-counter').innerHTML = document.querySelector('.comments-ul').childElementCount;  
   });
+  
 };
 
 export { popup, addcomment };

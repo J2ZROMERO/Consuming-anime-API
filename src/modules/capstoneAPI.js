@@ -6,6 +6,7 @@ export default class Requestapicapstone {
     this.ulrlikes = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${this.idApp}/likes/`;
     this.ulrpcomments = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${this.idApp}/comments/`;
 
+
   }
 
   
@@ -59,8 +60,7 @@ export default class Requestapicapstone {
 
   getcomments = async (id) => {
     const response = await fetch(this.ulrpcomments+'?item_id='+id);
-    let data;
-   
+    let data;   
     if(response.status == 500){
     } else {
       document.querySelector('.no-comments').style.display = 'none';
@@ -71,14 +71,21 @@ export default class Requestapicapstone {
         }
         
       } catch (error) {
-        data = 'null';
-           
+        data = 'null'; 
       }
     }
-  
+   
+
     return data;
- 
   }
 
 
+  setcommentsevent = async (id) => {
+    const response = await fetch(this.ulrpcomments+'?item_id='+id);
+        let     data = await response.json();
+    return data;
+  }
+
+
+ 
 }

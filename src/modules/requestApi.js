@@ -94,6 +94,7 @@ export default class Requestapi {
 comments = async (e) => {
   const getComment = async () => {
     const commentInfo = await likes.getcomments(e);
+    
     let liArray = "";
     for(let i = 0; i < commentInfo.length; i+=1){
       liArray += lielement.getComments(commentInfo[i].creation_date, commentInfo[i].username, commentInfo[i].comment)
