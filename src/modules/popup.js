@@ -1,3 +1,4 @@
+/* eslint-disable */
 import Requestapicapstone from './capstoneAPI.js';
 import lielement from './eleLiPok.js';
 
@@ -48,15 +49,14 @@ const addcomment = async (id) => {
 
     await com.postcoments(id, nameInput.value, textInput.value);
     const commentInfo = await com.setcommentsevent(id);
-    textInput.value = ""
-    nameInput.value = ""
+    textInput.value = '';
+    nameInput.value = '';
     let liArray = '';
     for (let i = 0; i < commentInfo.length; i += 1) {
       liArray += lielement.getComments(commentInfo[i].creation_date, commentInfo[i].username, commentInfo[i].comment);
     }
     document.querySelector('.comments-ul').innerHTML = liArray;
     document.querySelector('.comments-counter').innerHTML = document.querySelector('.comments-ul').childElementCount;
- 
   });
 };
 
