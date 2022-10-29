@@ -1,0 +1,210 @@
+* {
+  font-family: 'Pokemon Solid', sans-serif;
+  margin: 0%;
+  list-style: none;
+  padding: 0;
+}
+
+.logo-image {
+  width: 40px;
+  margin: 2%;
+  margin-top: 40%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  background-color: #b4b4b4;
+  border: 3px solid black;
+}
+
+.nav-ul {
+  display: flex;
+  list-style-type: none;
+  gap: 10%;
+}
+
+footer {
+  background-color: rgb(180, 180, 180);
+  padding: 2%;
+  border-top: 3px solid black;
+}
+
+.listPokemons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 17px;
+  grid-row-gap: 25px;
+  margin-bottom: 5%;
+  margin-top: 3%;
+}
+
+.target {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 94%;
+}
+
+.likes {
+  width: 51%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+h3 {
+  width: 100%;
+  text-align: end;
+  font-size: 0.7em;
+}
+
+.poke {
+  width: 50%;
+  height: 50%;
+}
+
+.reservations {
+  margin-top: 4%;
+  width: 56%;
+  box-shadow: 2.5px 5px;
+  border: 3px solid black;
+  background-color: #b4b4b4;
+}
+
+.comments {
+  width: 51%;
+  box-shadow: 2.5px 5px;
+  border: 3px solid black;
+  background-color: #b4b4b4;
+  margin-top: 2%;
+}
+
+.pokename {
+  font-size: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.heart {
+  width: 20px;
+  height: 20px;
+}
+
+.totalpokemons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.selectPokemon {
+  width: 15%;
+  height: 29px;
+  margin-left: 1%;
+  border: 3px solid black;
+  text-align: center;
+}
+
+.confirm {
+  width: 29px;
+  margin-left: 1%;
+  cursor: pointer;
+}
+
+.seemore {
+  margin-left: 12%;
+}
+
+.poke-image {
+  width: 80%;
+  margin: 5%;
+  margin-right: 0%;
+}
+
+.popup {
+  border: 3px solid black;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.ul-cont {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 5%;
+}
+
+.close-btn {
+  font-size: 30px;
+}
+
+.image-div {
+  display: flex;
+  justify-content: center;
+}
+
+.poke-name {
+  text-align: center;
+}
+
+.add-a-comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-a-comment h2 {
+  text-align: center;
+}
+
+input,
+textarea {
+  width: 90%;
+  margin-bottom: 5%;
+  border: 3px solid black;
+  padding-left: 2%;
+}
+
+.comment-btn {
+  width: 50%;
+  margin-bottom: 5%;
+  border: 3px solid black;
+  background-color: #b4b4b4;
+}
+
+.comments-section {
+  text-align: center;
+}
+
+.creationDate,
+.userName,
+.userComment {
+  font-size: 10px;
+}
+
+.comments-ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comment-li-cont {
+  display: flex;
+}
